@@ -1,8 +1,6 @@
 import plotly
 import plotly.graph_objs as go
 import re
-
-
 def getCountry(line):
     result = re.split(r",",line,maxsplit=1)
     return result[0], result[1]
